@@ -6,6 +6,33 @@
     <title>Books</title>
 </head>
 <body>
-    
+    <script>
+
+        const bookData =    {
+                                "Book":
+                                [
+                                    {
+                                        "title" : "The Great Gatsby",
+                                        "author" : "F. Scott Fitzgerald",
+                                        "publicationYear" : 1925,
+                                        "genre" : ["Fiction", "Classics"]
+                                    },
+                                    {
+                                        "title" : "To Kill a Mockingbird",
+                                        "author": "Harper Lee",
+                                        "publicationYear": 1960,
+                                        "genre": ["Fiction", "Coming-of-Age"]
+                                    }
+                                ]
+                            };
+
+        console.log(bookData.Book[0].title)
+        console.log(bookData.Book[1].author)
+
+        for (let i=0; i<bookData.Book.length; i++){
+            console.log(bookData.Book[i].title);
+        }
+
+    </script>
 </body>
 </html>
