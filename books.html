@@ -26,12 +26,12 @@
                                 ]
                             };
 
-        console.log(bookData.Book[0].title)
-        console.log(bookData.Book[1].author)
+        console.log("Title of the first book:", bookData.Book[0].title)
+        console.log("Author of the second book:", bookData.Book[1].author)
 
-        for (let i=0; i<bookData.Book.length; i++){
-            console.log(bookData.Book[i].title);
-        }
+        bookData.Book.forEach((book, index) => {
+            console.log("The Genre of Book: ",index+1 ,book.genre);
+        });
 
     </script>
 </body>
